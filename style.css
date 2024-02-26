@@ -1,0 +1,24 @@
+body{
+    padding-left: 50px;
+    padding-top: 20px;
+
+    
+}
+img{
+    margin-left: 30px;
+
+    border-radius: 15px;
+    box-shadow: 1px 5px 4px rgb(97, 89, 89);
+}
+.hide{
+    display: none;
+    margin-left: 2%;
+}
+.lastmargin{
+    margin-left: 35px;
+}
+
+div>a{
+    color: black;
+    text-decoration: none;
+}
