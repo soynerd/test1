@@ -11,17 +11,21 @@
 
 </head>
 <body>
-    <div class="header" id="test">
-        <h1 style="margin-left: -30px"> <i class="bi bi-filter-right"></i>DR. AFREEN KHURSHEED</h1>
+    <div class="header" id="bio">
+        <h1 style="margin-left: -30px">1. DR. AFREEN KHURSHEED</h1>
         <img src="./public/images/test1.jpg" alt="AFREEN"><br>
         <h5 style="margin-top: 5px;">Assistant Professor (ECE)</h5>
         <h5>Phone: 9425010967</h5>
         <h5>Email: afeenkhursheed10@gmail.com</h5>
+        
 
     </div>
+    <div class="details" id="details"><a href="#bio" onclick="toggleDiv('biodata')"><p onclick="toggleDiv('test5')"><h3 onclick="toggleDiv('test4')"> <i id="test4" class="bi bi-arrow-bar-down"></i> <i id="test5" class="bi bi-arrow-bar-up hide"></i> Details</h3></p></a></div>
+    <div class="biodata hide" id="biodata">
+
     <div class="eduction" >
         <a href="#test" onclick="toggleDiv('educationDescription')">
-        <h2 > 1. Education <i class="bi bi-chevron-double-down" style="font-size: 22px;"></i></i></h2></a>
+        <h3 > 1. Education <i class="bi bi-chevron-double-down" style="font-size: 22px;"></i></i></h3></a>
         <ul id="educationDescription" class="hide">
             <li>Ph.D. from MANIT Bhopal (Awarded 2019) with specialization in Nanotechnology & Low power VLSI</li>
             <li>M. Tech. from MANIT Bhopal (Awarded 2009) in VLSI&EMBEDDED SYSTEMS.</li>
@@ -30,22 +34,43 @@
     </div>
     <div class="experience">
         <a href="#educationDescription" onclick="toggleDiv('experienceDis')">
-        <h2>2. EXPERIENCE : <i class="bi bi-chevron-double-down" style="font-size: 22px;"></i></h2></a>
+        <h3>2. Experience <i class="bi bi-chevron-double-down" style="font-size: 22px;"></i></h3></a>
         <ul id="experienceDis" class="hide">
-            <li>ECE, M.Tech. – Low Power VLSI</li>
-
+            <li>September, 2020 to till date - Assistant Professor, IIIT Bhopal.</li>
+            <li>July, 2012 to December, 2019 - Assistant Professor, SAGE Bhopal</li>
+            <li>July 2011 to May 2012 - Assistant Professor, TOCE, VTU Bangalore.</li>
+            <li>July 2010 to Sept 2010 – Lecturer SIRT Bhopal</li>
+            <li>Feb 2008 to May 2009- VLSI design intern RV VLSI, Bangalore.</li>
+            <li>July 2005 to Dec 2007 SIRT Bhopal.</li>
         </ul>
     </div>
+
+    <div class="teaching" id="teaching">
+        <a href="#experienceDis" onclick="toggleDiv('teachingDetails')"><h3>3. Teaching <i class="bi bi-chevron-double-down" style="font-size: 22px;"></i></h3></a>
+        <div id="teachingDetails" class="hide">
+            <ul>
+                <li>ECE, B.Tech. – VLSI Design</li>
+                <li>ECE, B.Tech. – Electronics Devices and Circuits</li>
+                <li>ECE, B.Tech. – Linear Integrated Circuits</li>
+                <li>ECE, B.Tech. – Nanotechnology</li>
+                <li>ECE, B.Tech. – Digital Signal Processing</li>
+                <li>ECE, M.Tech. – Device and Interconnect Modelling.</li>
+                <li>ECE, M.Tech. – Low Power VLSI</li>
+            </ul>
+        </div>
+        
+    </div>
+
     <div class="research">
-        <h2> 3. RESEARCH :</h2>
-        <div class="lastmargin">
+        
+        <div class="">
             <div class="reseachProfiles">
                 <a href="#experienceDis"  onclick="toggleDiv('researchProfiles')">
-                <h3><li>Research Profiles <i class="bi bi-chevron-double-down" style="font-size: 20px;"></i></li></h3></a>
+                <h3>4. Research Profiles <i class="bi bi-chevron-double-down" style="font-size: 20px;"></i></h3></a>
                 <ul id="researchProfiles" class="hide">
-                    <a href="https://scholar.google.co.in/citations?user=C2UrTCEAAAAJ&hl=en">Google Scholar</a>
-                    <a href="https://orcid.org/0000-0001-5169-4223">Orchid</a>
-                    <a href="https://www.researchgate.net/profile/Afreen-Khursheed-2">Researchgate</a>
+                    <li><a href="https://scholar.google.co.in/citations?user=C2UrTCEAAAAJ&hl=en">Google Scholar</a><br></li>
+                    <li><a href="https://orcid.org/0000-0001-5169-4223">Orchid</a><br></li>
+                    <li><a href="https://www.researchgate.net/profile/Afreen-Khursheed-2">Researchgate</a></li>
                     <li>Web of Science ResearcherID : L-8974-2019</li>
                     <li>Scopus ID: 57204071491</li>
                     
@@ -53,7 +78,7 @@
             </div>
             <div class="areaOfResearch">
                 <a href="#researchProfiles" onclick="toggleDiv('areaOfresearchDis')">
-                <h3><li>Area Of Research : <i class="bi bi-chevron-double-down" style="font-size: 22px;"></i></li></h3></a>
+                <h3>5. Area Of Research <i class="bi bi-chevron-double-down" style="font-size: 22px;"></i></h3></a>
                 <ul id="areaOfresearchDis" class="hide">
                     <li>Device and Interconnect Modelling</li>
                     <li>Spintronics</li>
@@ -64,7 +89,7 @@
         
         <div class="journal">
             <a href="#areaOfresearchDis" onclick="toggleDiv('journalDis')">
-            <h3>4. Journal Publication <span>(Best 5)</span>:</h3></a>
+            <h3>6. Journal Publication <span>(Best 5)</span>:</h3></a>
             <ul id="journalDis" class="hide">
                 <li>Khursheed A, Khare K. Optimized buffer insertion for efficient interconnects designs. Int J Numer Model El. 2020; e2748. <a href="https://doi.org/10.1002/jnm.2748">here</a> [SCI].</li>
                 <li>Khursheed, A. and Khare, K. (2020), "Designing dual-chirality and mliti-Vt repeaters for performance optimization of 32 nm interconnects", Circuit World, Vol. 46 No. 2, pp. 71-83. <a href="https://doi.org/10.1108/CW-06-2019-0060">here</a>  [SCI].</li>
@@ -76,7 +101,7 @@
         </div>
         <div class="conference">
             <a href="#journalDis"  onclick="toggleDiv('conferenceDis')">
-            <h3>5. Conference Publication <span>(Best 5)</span> :</h3></a>
+            <h3>7. Conference Publication <span>(Best 5)</span> :</h3></a>
             <ul id="conferenceDis" class="hide">
                 <li>Afreen Khursheed, “Optimized Buffer Insertion using PSO Technique for efficient interconnect designs” presented at International Conference on Applied Mechanics, Machine Learning and Advanced Computation AMMLAC-2022 , 16-17 March 2022 at NIT Raipur.</li>
                 <li>Afreen Khursheed, “Optimized Buffer Insertion using PSO Technique for efficient interconnect designs” presented at International Conference on Applied Mechanics, Machine Learning and Advanced Computation AMMLAC-2022 , 16-17 March 2022 at NIT Raipur.</li>
@@ -90,7 +115,7 @@
         </div>
         <div class="bookChapter">
             <a href="#conferenceDis"  onclick="toggleDiv('bookChapterDis')">
-            <h3>6. Book chapter Publication <span>(Best 5)</span>  :</h3></a>
+            <h3>8. Book chapter Publication <span>(Best 5)</span>  :</h3></a>
             <ul id="bookChapterDis" class="hide">
                 <li><b>Chapter 4</b> titled “GNRFET based Ternary Repeaters – Prospects and Potential Implementation for efficient GNR interconnects". Book titled "Sub-Micron Semiconductor Devices and Applications" by CRC Press, Taylor & Francis, ISBN 9780367648091 April 27, 2022.</li>
                 <li><b>Chapter 7</b> Novel Subthreshold Modelling of FinFET based energy-effective circuit designs. Book entitled “Nanoscale Semiconductor: Materials, Devices and Circuits” to be published by CRC Press, Taylor & Francis.</li>
@@ -100,7 +125,7 @@
         </div>
         <div class="bookPublication">
             <a href="#bookChapterDis"  onclick="toggleDiv('bookPublicationDis')">
-            <h3>7. Book Publication <span>(Best 3):</span> </h3></a>
+            <h3>9. Book Publication <span>(Best 3):</span> </h3></a>
             <ul id="bookPublicationDis" class="hide">
                 <li>Nano Interconnects: Device Physics, Modeling and Simliation - Taylor & Francis Group, LLC / CRC Press (ISBN: 9780367610487). <a href="https://doi.org/10.1201/9781003104193">here</a> </li>
                 <li>Automating Dummy Fill for DSM Technology – LAP LAMBERT Academic Publishing, Publication Date Nov 29, 2019, ISBN-10 6200470987, ISBN-13 978-620-0-47098-0</li>
@@ -108,30 +133,25 @@
             </ul>
         </div>
         <div class="patient">
-            <h2>PATIENTS: </h2>
-            <div class="lastmargin">
-                <div class="granted">
-                    <a href="#bookPublicationDis" onclick="toggleDiv('grantedDis')">
-                    <h3><li>Patients Granted <i class="bi bi-chevron-double-down" style="font-size: 22px;"></i></li></h3></a>
-                    <ol id="grantedDis" class="hide">
-                        <li><b>Title of invention:</b> A PORTABLE CROP DISEASE DETECTION DEVICE. <ul><li>Patent number: 2022/03710 (REPUBLIC OF SOUTH AFRICA PATENTS ACT, No 57 of 1978) ; Dated 25 January 2023</li></ul></li>
-                        <li><b>Title of invention:</b> “A METHOD FOR PREDICTION OF COVID-19 BASED ON MACHINE LEARNING ALGORITHM.”<ul> <li>.Patent number: 2021103550 (Australian Patent) ; Dated 28 Jliy 2021</li></ul></li>
-                        <li><b>Title of invention:</b> “Food Warmer.” <ul><li>Patent number: 345147-001 (Indian Design Patent); Dated 8 April 2022</li></ul></li>
-                    </ol>            
-                </div>
-                <div class="published">
-                    <a href="#grantedDis" onclick="toggleDiv('publishedDis')">
-                    <h3><li>Patents Published: <i class="bi bi-chevron-double-down" style="font-size: 22px;"></i></li></h3></a>
-                    <ol id="publishedDis" class="hide">
-                        <li><b>Title of invention:</b> “A SMART AGRICliTURE SYSTEM AND METHOD INTEGRATED WITH IOT DEVICES”. <ul> <li>Patent number: 20212100988 (Indian Patent); Dated 09-March-2021</li></ul></ol>                    
-                    </ol>
-                </div>
+            <a href="#bookPublicationDis" onclick="toggleDiv('patients')"><h3>10. PATIENTS: <i class="bi bi-chevron-double-down" style="font-size: 22px;"></i></h3></a>
+            <div id="patients" class="patientsDetails hide">
+                <ol>
+                    <li><b>Title of invention:</b> A PORTABLE CROP DISEASE DETECTION DEVICE. <b style="font-weight: 600;">Granted</b>
+                        <ul><li>Patent number: 2022/03710 (REPUBLIC OF SOUTH AFRICA PATENTS ACT, No 57 of 1978) ; Dated 25 January 2023</li></ul></li>
+                    <li><b>Title of invention:</b> “A METHOD FOR PREDICTION OF COVID-19 BASED ON MACHINE LEARNING ALGORITHM.”<b style="font-weight: 600;">Granted</b>
+                        <ul> <li>.Patent number: 2021103550 (Australian Patent) ; Dated 28 Jliy 2021</li></ul></li>
+                    <li><b>Title of invention:</b> “Food Warmer.”  <b style="font-weight: 600;">Granted</b>
+                        <ul><li>Patent number: 345147-001 (Indian Design Patent); Dated 8 April 2022</li></ul></li>
+                    <li><b>Title of invention:</b> “A SMART AGRICliTURE SYSTEM AND METHOD INTEGRATED WITH IOT DEVICES”. <b style="font-weight: 600;">Published</b>
+                        <ul> <li>Patent number: 20212100988 (Indian Patent); Dated 09-March-2021</li></ul></ol>                    
+                </ol>
             </div>
+
             
         </div>
         <div class="projectSupervision">
             <a href="#publishedDis" onclick="toggleDiv('projectSupervisionDis')">
-            <h2>PROJECT SUPERVISION:</h2></a>
+            <h3>11. PROJECT SUPERVISION:</h3></a>
             <ul id="projectSupervisionDis" class="hide">
                 <li><b>B.E. / B. Tech.:</b> 100 projects supervised</li>
                 <li><b>M.E./ M. Tech.:</b> 3 projects/thesis supervised</li>
@@ -140,7 +160,7 @@
         </div>
         <div class="responsibilty">
             <a href="#projectSupervisionDis" onclick="toggleDiv('responsibilityDis')">
-            <h2>RESPONSIBILITY:</h2></a>
+            <h3>12. RESPONSIBILITY:</h3></a>
             <ul id="responsibilityDis" class="hide">
                 <li>Course Coordinator ECE IIIT Bhopal.</li>
                 <li>BOS member IIIT Bhopal.</li>
@@ -158,7 +178,7 @@
         </div>
         <div class="other">
             <a href="#responsibilityDis" onclick="toggleDiv('otherDis')">
-            <h2>ANY OTHER:</h2></a>
+            <h3>13. ANY OTHER:</h3></a>
             <ul id="otherDis" class="hide">
                 <li>Appointed as Judge during “Hack with Google Developer Student Clubs IIIT Bhopal” conducted from 8-10 April 2022.</li>
                 <li><b>Workshop Coordinator</b> in online workshop titled “Data Mining and its Applications” conducted from 07th March 2021 to 11th March 2021, organized by <b>IIIT, Bhopal</b> .</li>
@@ -171,21 +191,35 @@
                 <li>Awarded best paper at Fifth International Conference on Mlitimedia Signal Processing and Communication Technologies organised by Department of Electronics Engineering AMU Aligarh and co sponsored by IEEE UP section and IEEE USA held from 26to27 November 2022.</li>
                 <li>Awarded best poster presentation on the occasion of research scholar day (Dec-2018) at M.A.N.I.T, Bhopal.</li>
                 <li>Editorial Board Member in “Science Journal of Circuits, Systems and Signal Processing(CSSP); ISSN Print: 2326-9065, ISSN Online: 2326-9073.</li>
-                <li>Review committee member in “International Conference on Materials and Energy (ICME2k19)” which is organizing in the Hotel Haritha Kakatiya, Warangal, Telangana, India during 26th and 27th Jliy 2019.</li>
+                <li>Review committee member in “International Conference on Materials and Energy (ICME2k19)” which is organizing in the Hotel Haritha Kakatiya, Warangal, Telangana, India during 26th and 27th July 2019.</li>
                 <li>Awarded with Certificate of Appreciation for producing highest reslit in the subjects taught at BE RGPV.</li>
                 <li>Felicitated with Silver medal and Shield for successfli completion of 10 years with Sagar Group of Institutions.</li>
                 <li>Achiever of Month Faclity award at Athmanthan 2017 by SAGE.</li>
                 <li>Appointed as Technical Reviewer of International (SCI-Indexed) journals and peer reviewed journals.</li>
             </ul>
         </div>
+        
+
 
 
     </div>
+</div>
     <script>
         function toggleDiv(c) {
           const toggleDiv = document.getElementById(c);
           toggleDiv.style.display = toggleDiv.style.display === "block" ? "none" : "block";
         }
     </script>
+
+<p id="up" class="class1" onclick="changeSymbol()">Click to change class</p>
+
+<script>
+
+function changeSymbol() {
+  var sym = document.getElementById('up');
+  sym.classList.toggle('hide');
+  sym.classList.toggle('class2');
+}
+</script>
 </body>
 </html> 
