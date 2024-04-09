@@ -20,14 +20,14 @@
         
 
     </div>
-    <div class="details" id="details"><a href="#bio" onclick="toggleDiv('biodata')"> <h3><i id="test4" class="bi bi-arrow-bar-down"></i> Details</h3></p></a></div>
-    <div class="biodata hide" id="biodata">
-
-    <div class="eduction" >
+    <div class="details" id="details"><a href="#details"><h3><p id="popupText"><i id="test4" class="bi bi-arrow-bar-down"></i> Details</h3></p></a></div>
+    <div class="popup" id="popup">
+        <span class="close" onclick="togglePopup()">&times;</span>
+    <div class="eduction " >
         <a href="#test" onclick="toggleDiv('educationDescription')">
         <h3 > 1. Education <i class="bi bi-chevron-double-down" style="font-size: 22px;"></i></i></h3></a>
         <ul id="educationDescription" class="hide">
-            <li>Ph.D. from MANIT Bhopal (Awarded 2019) with specialization in Nanotechnology & Low power VLSI</li>
+            <li>Ph.D. from MANIT Bhopal (Awarded 2019) with specialization in Nanotechnology & Low power VLSI</li> 
             <li>M. Tech. from MANIT Bhopal (Awarded 2009) in VLSI&EMBEDDED SYSTEMS.</li>
             <li>B.E. in ECE from RGPV Bhopal.</li>
         </ul>
@@ -204,12 +204,44 @@
 
     </div>
 </div>
+
+
+</div>
     <script>
+        var temp;
         function toggleDiv(c) {
-          const toggleDiv = document.getElementById(c);
+            // if(temp){
+            //     const temp1= document.getElementById(temp);
+            //     temp1.style.display = temp1.style.display === "none";
+            // }
+            const toggleDiv = document.getElementById(c);
+
+            if(temp && temp!=toggleDiv){
+                temp.style.display = "none";
+            }
+
+          
           toggleDiv.style.display = toggleDiv.style.display === "block" ? "none" : "block";
+          temp=toggleDiv;
         }
+
+
+        function togglePopup() {
+            var popup = document.getElementById("popup");
+            if (popup.style.display === "none") {
+            popup.style.display = "block";
+            } else {
+            popup.style.display = "none";
+            }
+        }
+
+        // Add click event listener to the text
+        document.getElementById("popupText").addEventListener("click", function() {
+        // Call function to toggle the popup
+            togglePopup();
+        });
     </script>
+    
 
 
 </body>
